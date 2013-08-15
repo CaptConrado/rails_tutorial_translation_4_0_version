@@ -30,76 +30,86 @@
 
 <p> <span class="preamble">
  <span id="foreword">
-<strong> Foreword</strong> <br />
+<strong> Prefacio</strong> <br />
  </span>
  </span></p>
 
-<p>My former company (CD Baby) was one of the first to loudly switch to Ruby on Rails, and then even more loudly switch back to PHP (Google me to read about the drama). This book by Michael Hartl came so highly recommended that I had to try it, and the <em>Ruby on Rails Tutorial</em> is what I used to switch back to Rails again.</p>
+<p><span id="result_box10" lang="es">Mi antigua empresa (CD Baby) fue una de las primeras en cambiar fuertemente a Ruby on Rails, y aún con más fuerza volver a PHP (busquame en Google para leer sobre el mi drama). Este libro de Michael Hartl era tan recomendado que tenía que probarlo, y el Tutorial de Ruby on Rails es lo que yo necesidava para volver a Rails otra vez.</span></p>
 
-<p>Though I&rsquo;ve worked my way through many Rails books, this is the one that finally made me &ldquo;get&rdquo; it. Everything is done very much &ldquo;the Rails way&rdquo;&mdash;a way that felt very unnatural to me before, but now after doing this book finally feels natural. This is also the only Rails book that does test-driven development the entire time, an approach highly recommended by the experts but which has never been so clearly demonstrated before. Finally, by including Git, GitHub, and Heroku in the demo examples, the author really gives you a feel for what it&rsquo;s like to do a real-world project. The tutorial&rsquo;s code examples are not in isolation.</p>
+<p><span id="result_box38" lang="es">Aunque he trabajado a mi manera a través de muchos libros de Rails, este libro  finalmente me hizo "<span id="result_box40" lang="es">absorber</span>" Rails</span>. <span id="result_box39" lang="es">Todo se hace mucho</span> en  &ldquo;the Rails way&rdquo; &mdash; <span id="result_box41" lang="es">Un camino &ldquo;a way&rdquo; que se sentía muy natural para mí, pero ahora después de leer este libro finalmente se siente natural</span>. <span id="result_box42" lang="es">Este es también el único</span> libro de Rails that does test-driven development the entire time, an approach highly recommended by the experts but which has never been so clearly demonstrated before. <span id="result_box43" lang="es">Por último, mediante la inclusión de Git, GitHub, y Heroku en los ejemplos de demostración, el autor realmente te da una idea de lo que es hacer un proyecto en el mundo real. Los ejemplos de código fuente de este tutorial no están en aislamiento</span>.</p>
 
-<p>The linear narrative is such a great format. Personally, I powered through the <em>Rails Tutorial</em> in three long days, doing all the examples and challenges at the end of each chapter. Do it from start to finish, without jumping around, and you&rsquo;ll get the ultimate benefit.</p>
+<p><span id="result_box11" lang="es">La narración que usa esto libro es una solución genial. Personalmente, me puse a estudiar a fondo el Tutorial Rails en tres largos días, haciendo todos los ejemplos y desafíos al final de cada capítulo. Hágalo desde el principio hasta el final, sin saltos, y obtendrá el máximo beneficio.</span></p>
 
-<p>Enjoy!</p>
+<p>Disfrutalo!</p>
 
 <p><a href="http://sivers.org/">Derek Sivers</a> (<a href="http://sivers.org/">sivers.org</a>) <br />
-<em>Founder, CD Baby</em> <br /></p>
+<em><span id="result_box35" lang="es">Anteriormente</span>: <span id="result_box37" lang="es">Fundador</span>,</em> <a href="http://www.cdbaby.com/"><em>CD Baby</em></a> <br />
+<em><span id="result_box36" lang="es">Actualmente</span>: Fundador,</em> <a href="http://thoughts.pro/"><em>Thoughts Ltd.</em></a> <br /></p>
 
 <p> <span class="preamble">
-<strong> Acknowledgments</strong> <br />
+<strong> Agradecimientos</strong> <br />
  </span></p>
 
-<p>The <em>Ruby on Rails Tutorial</em> owes a lot to my previous Rails book, <em>RailsSpace</em>, and hence to my coauthor <a href="http://aure.com/">Aurelius Prochazka</a>. I&rsquo;d like to thank Aure both for the work he did on that book and for his support of this one. I&rsquo;d also like to thank Debra Williams Cauley, my editor on both <em>RailsSpace</em> and the <em>Ruby on Rails Tutorial</em>; as long as she keeps taking me to baseball games, I&rsquo;ll keep writing books for her.</p>
+<p>The <em>Ruby on Rails Tutorial</em> <span id="result_box22" lang="es">debe mucho a mi anterior</span> a Rails book, <em>RailsSpace</em>, <span id="result_box23" lang="es">y por lo tanto a mi coautor</span> <a href="http://aure.com/">Aurelius Prochazka</a>. <span id="result_box25" lang="es">Me gustaría dar las gracias a</span> Aure <span id="result_box24" lang="es">tanto para el trabajo que hizo en mi anterior libro y por su apoyo a este</span>.<span id="result_box26" lang="es">También me gustaría decir gracias a</span> Debra Williams Cauley, <span id="result_box27" lang="es">mi editor en ambos</span> <em>RailsSpace</em> y el <em>Ruby on Rails Tutorial</em>; <span id="result_box28" lang="es">mientras ella sigue llevándome a los partidos de béisbol, voy a seguir escribiendo libros para ella</span>.</p>
 
-<p>I&rsquo;d like to acknowledge a long list of Rubyists who have taught and inspired me over the years: David Heinemeier Hansson, Yehuda Katz, Carl Lerche, Jeremy Kemper, Xavier Noria, Ryan Bates, Geoffrey Grosenbach, Peter Cooper, Matt Aimonetti, Gregg Pollack, Wayne&nbsp;E. Seguin, Amy Hoy, Dave Chelimsky, Pat Maddox, Tom Preston-Werner, Chris Wanstrath, Chad Fowler, Josh Susser, Obie Fernandez, Ian McFarland, Steven Bristol, Pratik Naik, Sarah Mei, Sarah Allen, Wolfram Arnold, Alex Chaffee, Giles Bowkett, Evan Dorn, Long Nguyen, James Lindenbaum, Adam Wiggins, Tikhon Bernstam, Ron Evans, Wyatt Greene, Miles Forrest, the good people at Pivotal Labs, the Heroku gang, the thoughtbot guys, and the GitHub crew. Finally, many, many readers&mdash;far too many to list&mdash;have contributed a huge number of bug reports and suggestions during the writing of this book, and I gratefully acknowledge their help in making it as good as it can&nbsp;be. <br /></p>
+<p><span id="result_box29" lang="es">Me gustaría agradecer una larga lista de</span> desarrollarodes en Ruby (Rubyists) <span id="result_box30" lang="es">que han enseñado e inspirado en los últimos años</span>: David Heinemeier Hansson, Yehuda Katz, Carl Lerche, Jeremy Kemper, Xavier Noria, Ryan Bates, Geoffrey Grosenbach, Peter Cooper, Matt Aimonetti, Gregg Pollack, Wayne&nbsp;E. Seguin, Amy Hoy, Dave Chelimsky, Pat Maddox, Tom Preston-Werner, Chris Wanstrath, Chad Fowler, Josh Susser, Obie Fernandez, Ian McFarland, Steven Bristol, Pratik Naik, Sarah Mei, Sarah Allen, Wolfram Arnold, Alex Chaffee, Giles Bowkett, Evan Dorn, Long Nguyen, James Lindenbaum, Adam Wiggins, Tikhon Bernstam, Ron Evans, Wyatt Greene, Miles Forrest, <span id="result_box31" lang="es">la buena gente</span> Pivotal Labs, la pandilla de Heroku, <span id="result_box33" lang="es">los chicos de thoughtbot</span>, y el equipo GitHub. <span id="result_box32" lang="es">Por último, muchos, muchos lectores -<span id="result_box34" lang="es"> demasiados para enumerar</span> - han contribuido a un gran número de informes de errores y sugerencias durante la redacción de este libro, y agradecen su ayuda en lo que es tan bueno como se puede ser.</span><br />
+</p>
 
 <p> <span class="preamble">
  <span id="author">
-<strong> About the author</strong> <br />
+<strong> Sobre el autor</strong> <br />
  </span>
  </span></p>
 
-<p><a href="http://michaelhartl.com/">Michael Hartl</a> is the author of the <a href="http://ruby.railstutorial.org/"><em>Ruby on Rails Tutorial</em></a>, the leading introduction to web development with <a href="http://rubyonrails.org/">Ruby on Rails</a>. His prior experience includes writing and developing <em>RailsSpace</em>, an extremely obsolete Rails tutorial book, and developing Insoshi, a once-popular and now-obsolete social networking platform in Ruby on Rails. In 2011, Michael received a <a href="http://rubyheroes.com/heroes">Ruby Hero Award</a> for his contributions to the Ruby community. He is a graduate of <a href="http://college.harvard.edu/">Harvard College</a>, has a <a href="http://resolver.caltech.edu/CaltechETD:etd-05222003-161626">Ph.D. in Physics</a> from <a href="http://www.caltech.edu/">Caltech</a>, and is an alumnus of the <a href="http://ycombinator.com/">Y&nbsp;Combinator</a> entrepreneur program. <br /></p>
+<p><a href="http://michaelhartl.com/">Michael Hartl</a><span id="result_box13" lang="es"> es el autor de la</span> <a href="http://ruby.railstutorial.org/"><em>Ruby on Rails Tutorial</em></a>, <span id="result_box14" lang="es">la principal y mas conocidas introducción  al desarrollo web con</span> <a href="http://rubyonrails.org/">Ruby on Rails</a>. <span id="result_box15" lang="es">Su experiencia anterior incluye la escritura y sviluppo</span> <em>RailsSpace</em>, <span id="result_box16" lang="es">una extremadamente obsoleto</span> tutorial de Rails, y el desarrollo de Insoshi, <span id="result_box17" lang="es">una  vez plataforma y ahora obsoleta de redes sociales en</span> Ruby on Rails. In 2011, Michael recibi&oacute; un <a href="http://rubyheroes.com/heroes">Ruby Hero Award</a> <span id="result_box18" lang="es">por sus contribuciones a la</span> Ruby community. <span id="result_box19" lang="es">&Eacute;l es un graduado de la</span> <a href="http://college.harvard.edu/">Harvard College</a>, tiene un <a href="http://resolver.caltech.edu/CaltechETD:etd-05222003-161626">Ph.D. in Physics</a> de <a href="http://www.caltech.edu/">Caltech</a>, <span id="result_box20" lang="es">y es alumno de la</span> <a href="http://ycombinator.com/">Y&nbsp;Combinator</a><span id="result_box21" lang="es"> programa emprendedor.</span> <br />
+</p>
 
 <p> <span id="license" class="preamble">
-<strong> Copyright and license</strong> <br />
+<strong> Derechos de autor y licencia (Copyright and license)</strong><br />
  </span></p>
 
-<p><em>Ruby on Rails Tutorial: Learn Web Development with Rails</em>. Copyright &copy; 2013 by Michael Hartl. All source code in the <em>Ruby on Rails Tutorial</em> is available jointly under the <a href="http://opensource.org/licenses/MIT">MIT License</a> and the <a href="http://people.freebsd.org/~phk/">Beerware License</a>.</p>
+<p><em>Ruby on Rails Tutorial: Learn Web Development with Rails</em>. Copyright &copy; 2012 de Michael Hartl. Todo el código fuente de <em>Ruby on Rails Tutorial</em><span id="result_box12" lang="es"> está disponible conjuntamente bajo la </span><a href="http://www.opensource.org/licenses/mit-license.php">MIT License</a> y la <a href="http://people.freebsd.org/~phk/">Beerware License</a>.</p>
 
-<div class="code"><div class="highlight"><pre>The MIT License
+<div class="code"><div class="highlight">
+  <pre>The MIT License en Español (TRADUCCIÓN NO OFICIAL NI AUTORIZADA PARA SU USO COMO LICENCIA LEGAL)
 
-Copyright (c) 2013 Michael Hartl
+Copyright (c) 2012 Michael Hartl
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the &quot;Software&quot;), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+Se autoriza por la presente, de forma gratuita, a cualquier
+persona que haya obtenido una copia de este software y 
+archivos asociados de documentación (el "Software"), para tratar en el
+Software sin restricción, incluyendo sin ninguna limitación en lo que concierne
+los derechos para usar, copiar, modificar, fusionar, publicar,
+distribuir, sublicenciar, y / o vender copias de este
+Software, y para permitir a las personas a las que se les proporcione el Software para 
+hacer lo mismo, sujeto a las siguientes condiciones:
 
-The above copyright notice and this permission notice shall be included in
-all copies or substantial portions of the Software.
+El aviso de copyright anterior y este aviso de permiso
+tendrá que ser incluido en todas las copias o partes sustanciales de
+este Software.
 
-THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.  IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
-THE SOFTWARE.
-</pre></div>
+EL SOFTWARE SE ENTREGA "TAL CUAL", SIN GARANTÍA DE NINGÚN
+TIPO, EXPRESA O IMPLÍCITA, INCLUYENDO PERO SIN LIMITARSE A GARANTÍAS DE
+MERCANTIBILIDAD, CAPACIDAD DE HACER Y DE NO INFRACCIÓN DE COPYRIGHT. EN NINGÚN 
+CASO LOS AUTORES O TITULARES DEL COPYRIGHT SERÁN RESPONSABLES DE 
+NINGUNA RECLAMACIÓN, DAÑOS U OTRAS RESPONSABILIDADES, 
+YA SEA EN UN LITIGIO, AGRAVIO O DE OTRO MODO, 
+DERIVADAS DE, OCASIONADAS POR CULPA DE O EN CONEXION CON EL
+SOFTWARE O SU USO U OTRO TIPO DE ACCIONES EN EL SOFTWARE.
+</pre>
+</div>
 </div>
 
 
-<div class="code"><div class="highlight"><pre>/*
+<div class="code"><div class="highlight">
+  <pre>/*
  * ----------------------------------------------------------------------------
- * &quot;THE BEER-WARE LICENSE&quot; (Revision 42):
- * Michael Hartl wrote this code. As long as you retain this notice you
- * can do whatever you want with this stuff. If we meet some day, and you think
- * this stuff is worth it, you can buy me a beer in return.
+ * &quot;THE BEER-WARE LICENSE&quot; (Revision 42) en Español:
+ * Michael Hartl escribió este código fuente. Hasta que conserve este aviso con esta cosa puedes hacer lo 
+ * que quieras. Si algún día nos encontramos, y usted piensa que esto vale la pena, me puedes
+ * comprar una cerveza a cambio.
  * ----------------------------------------------------------------------------
  */
-</pre></div>
+</pre>
 </div>
-
+</div>
