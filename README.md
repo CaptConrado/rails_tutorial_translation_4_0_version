@@ -1,35 +1,34 @@
 # Translation of the Ruby on Rails Tutorial (4.0 version)
 
-This repository contains the HTML source for the [Rails 4.0 version of the Ruby on Rails Tutorial](http://railstutorial.org/book?version=4.0), with the goal of allowing translation of the tutorial to languages other than the [*lingua franca*](http://en.wikipedia.org/wiki/Lingua_franca).
+Esto repositorio contiene el codigo funte  HTML por [Rails 4.0 version of the Ruby on Rails Tutorial](http://railstutorial.org/), con el proposito de permitir la traduccion de esto tutorial en otro idioma aparte la [*lingua franca*](http://en.wikipedia.org/wiki/Lingua_franca). 
 
-## Getting started
+## Para Empiezar
 
-To translate the Ruby on Rails Tutorial, simply fork this repository, clone it to your local machine, and get started translating it to your language of choice. If you want to work with other translators (which I certainly encourage), add them as collaborators to the repository as needed. At any time, you are free to deploy the result to a URL of your choice. Once it's up and ready for public consumption, send the URI to `admin@railstutorial.org` and I'll link to it from the main Rails Tutorial website.
+Por traducir el Tutorial de Ruby On Rails, simplemente 'fork' esto repositorio, clonalo en tu maquina local, y empieza a traducir en el tuyo idioma. Si tu quiere trabajar con otro traductores (que sin duda es algo que yo fomentaria), agregalo como colaboradores al repositorio donde estas trabajando. En cualquier momento tu eres libre de poner el resultado en una URL de tu elegion. Una vez que está arriba y listo para el consumo público, enviar URI a `admin@railstutorial.org` y yo voy a enviar el link a eso desde el principal sitio de 'Rails Tutorial'.
 
-Since I often make minor fixes to the book, I recommend occasionally merging in changes from the master branch. If merging causes too many conflicts, you can omit this optional step.
+Puesto que a menudo hacen correcciones pequeñas al libro, yo recomiendo el 'merging' (agregar los cambios) en el 'master branch' (el ramo principal del repositorio) de vez en cuando. Si te das cuentas que el 'merging' la fusión provoca demasiados conflictos, tu puede omitir este paso optionale.
 
-## Source files
+## Codigo Fuente
 
-The repository contains an HTML source file for each chapter of the Ruby on Rails Tutorial, as well as two CSS files for styling and an images directory with all of the book's figures. Note that the image URIs in the HTML files are *relative*, i.e., they appear as
+El repositorio contiene codigo fuente HTML por cada capítulo de 'Ruby on Rails Tutorial', así como dos CSS archivos por le estilo y el directorio de las imágenes donde estan todos las imágenes del libro. Tenga en cuenta que la imagen de los URI en los archivos HTML son *relativo*, exemplo, aparecen como
 
     images/figures/foo.png
 
-with no leading slash. This is so that when you view the HTML files locally all the images load correctly.
+sin diagonal inicial. Eso porque cuando tu ves los archivos HTML localmente todas las imágenes cargano correctamente. 
 
-For a fully deployed version of the book, you may have to change the image paths from relative to absolute, such as
-
+Para obtener una versión completamente desplegado del libro, tu puede cambiar la ruta de las imágenes desde relativo a absoluto, tal como
     /images/figures/foo.png
 
-If this ends up being the case, I recommend writing a script to build the production output. You may find the Ruby line
+Si esto resulta ser el caso, Recomiendo escribir un script para crear la justa version en produccion. Tu tiene que encontrar la siguiente linea de codigo
 
 ```ruby
 text.gsub!('"images/', '"/images/')
 ```
 
-to be useful in this context.
+para ser útil en este contexto.
 
-## License
+## Licencia
 
-*Ruby on Rails Tutorial*. Copyright &copy; 2013 by Michael Hartl.
+*Ruby on Rails Tutorial, 2nd Edition*. Copyright &copy (Derecho de Autor) ; 2013 de Michael Hartl.
 
-The HTML source of the Ruby on Rails Tutorial book is available under the [Creative Commons Attribution-ShareAlike 3.0 Unported License](http://creativecommons.org/licenses/by-sa/3.0/), which allows translation of the book as long as you give attribution to the original author ([Michael Hartl](http://michaelhartl.com/)) and distribute the translation under the same license.
+El codigo fuente HTML de el libro 'Ruby On Rails Tutorial' que está disponible bajo el [Creative Commons Attribution-ShareAlike 3.0 Unported License](http://creativecommons.org/licenses/by-sa/3.0/), que permite la traducción del libro, siempre y cuando te dan la atribución al autor original ([Michael Hartl](http://michaelhartl.com/)) y distribuir la traducción bajo la misma licencia.
