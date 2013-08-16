@@ -5,9 +5,9 @@
 <h1 class="chapter"><a id="sec-2" href="a-demo-app.html#top" class="heading"><span class="number">Chapter 2</span> A demo app</a></h1>
 
 
-<p>In this chapter, we&rsquo;ll develop a simple demonstration application to show off some of the power of Rails. The purpose is to get a high-level overview of Ruby on Rails programming (and web development in general) by rapidly generating an application using <em>scaffold generators</em>. As discussed in <a class="ref" href="beginning.html#sidebar-scaffolding">Box&nbsp;1.2</a>, the rest of the book will take the opposite approach, developing a full application incrementally and explaining each new concept as it arises, but for a quick overview (and some instant gratification) there is no substitute for scaffolding. The resulting demo app will allow us to interact with it through its URLs, giving us insight into the structure of a Rails application, including a first example of the <em>REST architecture</em> favored by Rails.</p>
+<p>En este capítulo, vamos a desarrollar una aplicación de demostración sencilla para mostrar sobre el poder de Rails. El propósito es obtener una visión general de alto nivel de la programación de Ruby on Rails (y del desarrollo web en general) mediante la generación rápida de una aplicación mediante <em>scaffold generators</em>. Como se discutió en <a class="ref" href="beginning.html#sidebar-scaffolding">Box&nbsp;1.2</a>, el resto del libro se toma el camino contrario, el desarrollo de una aplicación completa incremental y explicar cada concepto nuevo que se plantee, pero para una visión rápida (y cierta gratificación instantánea) no hay sustituto para el scaffolding. La aplicación de demostración resultante nos permitirá interactuar con ella a través de su URL, que nos da una idea de la estructura de una aplicación Rails, que incluye un primer ejemplo de la <em>REST architecture</em> utilizado en Rails.</p>
 
-<p>As with the forthcoming sample application, the demo app will consist of <em>users</em> and their associated <em>microposts</em> (thus constituting a minimalist Twitter-style app). The functionality will be utterly under-developed, and many of the steps will seem like magic, but worry not: the full sample app will develop a similar application from the ground up starting in <a class="ref" href="static-pages.html#top">Chapter&nbsp;3</a>, and I will provide plentiful forward-references to later material. In the mean time, have patience and a little faith&mdash;the whole point of this tutorial is to take you <em>beyond</em> this superficial, scaffold-driven approach to achieve a deeper understanding of Rails.</p>
+<p>Al igual que con la próxima aplicación de ejemplo, la aplicación de demostración consistirá en <em>users</em> (usuarios) y su asociado <em>microposts</em> (lo que constituye una aplicación minimalista en el estilo de Twitter). Muchos de los pasos que se parecen nacidos como para magia, son desarrollado autamaticamente: la aplicación completa se desarrollará con una aplicación similar a esta a partir del <a class="ref" href="static-pages.html#top">Capítulo 3</a>, y voy a dar más adelante abundantes referencias y documentción. Por el momento, tener paciencia y un poco de fe el punto central de este tutorial es que te lleve <em>más allá</em> este enfoque superficial, impulsado gracias al omando scaffolding para lograr una comprensión más profunda de Rails.</p>
 
 <div class="label" id="sec-planning_the_application"></div>
 
@@ -15,7 +15,7 @@
 <h2><a id="sec-2_1" href="a-demo-app.html#sec-planning_the_application" class="heading"><span class="number">2.1</span> Planning the application</a></h2>
 
 
-<p>In this section, we&rsquo;ll outline our plans for the demo application. As in <a class="ref" href="beginning.html#sec-the_first_application">Section&nbsp;1.2.3</a>, we&rsquo;ll start by generating the application skeleton using the <code>rails</code> command:</p>
+<p>En esta sección, vamos a esbozar los planes para la aplicación de demostración. Como en la <a class="ref" href="beginning.html#sec-the_first_application">Sección 1.2.3</a>, vamos a empezar generando el esqueleto de la aplicación utilizando el comando <code>rails</code>:</p>
 
 <div class="code"><div class="highlight"><pre><span class="gp">$</span> <span class="nb">cd</span> ~/rails_projects
 <span class="gp">$</span> rails new demo_app
@@ -24,13 +24,13 @@
 </div>
 
 
-<p>Next, we&rsquo;ll use a text editor to update the <code>Gemfile</code> needed by Bundler with the contents of <a class="ref" href="a-demo-app.html#code-demo_gemfile_sqlite_version_redux">Listing&nbsp;2.1</a>.</p>
+<p>A continuación, vamos a utilizar un editor de texto para actualizar el <code>Gemfile</code> que nos ocurre utilizando la gema Bundler con el contenido del <a class="ref" href="a-demo-app.html#code-demo_gemfile_sqlite_version_redux">Listado&nbsp;2.1</a>.</p>
 
 <div class="label" id="code-demo_gemfile_sqlite_version_redux"></div>
 
 
 <div class="codelisting">
-<div class="listing"><span class="header">Listing 2.1.</span> <span class="description">A <code>Gemfile</code> for the demo app.</span> </div>
+<div class="listing"><span class="header">Listado 2.1.</span> <span class="description">Un<code>Gemfile</code> de ejemplo para la demo app.</span> </div>
 <div class="code"><div class="highlight"><pre><span class="n">source</span> <span class="s1">&#39;https://rubygems.org&#39;</span>
 <span class="n">ruby</span> <span class="s1">&#39;2.0.0&#39;</span>
 <span class="c1">#ruby-gemset=railstutorial_rails_4_0</span>
@@ -60,9 +60,9 @@
 </div></div>
 
 
-<p>Note that <a class="ref" href="a-demo-app.html#code-demo_gemfile_sqlite_version_redux">Listing&nbsp;2.1</a> is identical to <a class="ref" href="beginning.html#code-gemfile_pg_gem">Listing&nbsp;1.9</a>.</p>
+<p>Tiene en cuenta que el <a class="ref" href="a-demo-app.html#code-demo_gemfile_sqlite_version_redux">Listado&nbsp;2.1</a> es lo mismo del <a class="ref" href="beginning.html#code-gemfile_pg_gem">Listado&nbsp;1.9</a>.</p>
 
-<p>As in <a class="ref" href="beginning.html#sec-heroku_setup">Section&nbsp;1.4.1</a>, we&rsquo;ll install the local gems while suppressing the installation of production gems using the <tt class="verb">--without production</tt> option:</p>
+<p>Como en la <a class="ref" href="beginning.html#sec-heroku_setup">Sección&nbsp;1.4.1</a>, vamos a instalar las gemas locales, mientras que la supresión de la instalación de las gemas de producción mediante la opción <tt class="verb">--without production</tt>:</p>
 
 <div class="code"><div class="highlight"><pre><span class="gp">$</span> bundle install --without production
 <span class="gp">$</span> bundle update
@@ -71,9 +71,9 @@
 </div>
 
 
-<p>(Recall that if Bundler complains about a <tt>readline</tt> error, try adding <code>gem &rsquo;rb-readline&rsquo;</code> to your <code>Gemfile</code>.)</p>
+<p>(Recuerda el comando si Bundler queja con un error llamado<tt>readline</tt>, trate de añadir esa linea <code>gem &rsquo;rb-readline&rsquo;</code> al tuyo <code>Gemfile</code>.)</p>
 
-<p>Finally, we&rsquo;ll put the demo app under version control. Recall that the <code>rails</code> command generates a default <code>.gitignore</code> file, but depending on your system you may find the augmented file from <a class="ref" href="beginning.html#code-gitignore">Listing&nbsp;1.7</a> to be more convenient. Then initialize a Git repository and make the first commit:</p>
+<p>Por último, vamos a poner la aplicación de demostración bajo control de versiones. Recuerda que el comando <code>rails</code> genera un archivo predeterminado llamado <code>.gitignore</code>, pero dependiendo de su sistema, es posible que el archivo más dettallado come en el<a class="ref" href="beginning.html#code-gitignore">Listado&nbsp;1.7</a> sea más conveniente. Entonces inicializamos un repositorio Git y hacer el primer commit:</p>
 
 <div class="code"><div class="highlight"><pre><span class="gp">$</span> git init
 <span class="gp">$</span> git add .
@@ -85,10 +85,10 @@
 <div class="label" id="fig-create_demo_repo"></div>
 
 
-<div class="figure"><div class="center"><span class="graphic"><img src="images/figures/create_demo_repo_4_0.png" alt="create_demo_repo_4_0" /></span></div><div class="caption"><span class="header">Figure 2.1: </span><span class="description">Creating a demo app repository at GitHub.&nbsp;<a href="http://railstutorial.org/images/figures/create_demo_repo_4_0-full.png">(full size)</a></span></div></div>
+<div class="figure"><div class="center"><span class="graphic"><img src="images/figures/create_demo_repo_4_0.png" alt="create_demo_repo_4_0" /></span></div><div class="caption"><span class="header">Figura 2.1: </span><span class="description">La creación de un repositorio para la demo app en GitHub.&nbsp;<a href="http://railstutorial.org/images/figures/create_demo_repo_4_0-full.png">(full size)</a></span></div></div>
 
 
-<p>You can also optionally create a new repository (<a class="ref" href="a-demo-app.html#fig-create_demo_repo">Figure&nbsp;2.1</a>) and push it up to GitHub:</p>
+<p>También puede crear opcionalmente un nuevo repositorio (<a class="ref" href="a-demo-app.html#fig-create_demo_repo">Figura&nbsp;2.1</a>) e cargarla en GitHub:</p>
 
 <div class="code"><div class="highlight"><pre><span class="gp">$</span> git remote add origin https://github.com/&lt;username&gt;/demo_app.git
 <span class="gp">$</span> git push -u origin master
@@ -96,7 +96,7 @@
 </div>
 
 
-<p>(As with the first app, take care <em>not</em> to initialize the GitHub repository with a <code>README</code> file.)</p>
+<p>(Al igual que con la primera aplicación, tenga cuidado de <em>no</em> inicializar el repositorio en GitHub con un archivo <code>README</code>.)</p>
 
 <p>Now we&rsquo;re ready to start making the app itself. The typical first step when making a web application is to create a <em>data model</em>, which is a representation of the structures needed by our application. In our case, the demo app will be a microblog, with only users and short (micro)posts. Thus, we&rsquo;ll begin with a model for <em>users</em> of the app (<a class="ref" href="a-demo-app.html#sec-modeling_demo_users">Section&nbsp;2.1.1</a>), and then we&rsquo;ll add a model for  <em>microposts</em> (<a class="ref" href="a-demo-app.html#sec-modeling_demo_microposts">Section&nbsp;2.1.2</a>).</p>
 
