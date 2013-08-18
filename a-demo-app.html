@@ -98,7 +98,7 @@
 
 <p>(Al igual que con la primera aplicación, tenga cuidado de <em>no</em> inicializar el repositorio en GitHub con un archivo <code>README</code>.)</p>
 
-<p>Now we&rsquo;re ready to start making the app itself. The typical first step when making a web application is to create a <em>data model</em>, which is a representation of the structures needed by our application. In our case, the demo app will be a microblog, with only users and short (micro)posts. Thus, we&rsquo;ll begin with a model for <em>users</em> of the app (<a class="ref" href="a-demo-app.html#sec-modeling_demo_users">Section&nbsp;2.1.1</a>), and then we&rsquo;ll add a model for  <em>microposts</em> (<a class="ref" href="a-demo-app.html#sec-modeling_demo_microposts">Section&nbsp;2.1.2</a>).</p>
+<p>Ahora estamos listos para empezar a hacer la propia aplicación. El típico primer paso cuando al hacer una aplicación web es crear una <em>data model (un modelo de datos)</em>, which is a representation of the structures needed by our application. In our case, the demo app will be a microblog, with only users and short (micro)posts. Thus, we&rsquo;ll begin with a model for <em>users</em> of the app (<a class="ref" href="a-demo-app.html#sec-modeling_demo_users">Section&nbsp;2.1.1</a>), and then we&rsquo;ll add a model for  <em>microposts</em> (<a class="ref" href="a-demo-app.html#sec-modeling_demo_microposts">Section&nbsp;2.1.2</a>).</p>
 
 <div class="label" id="sec-modeling_demo_users"></div>
 
@@ -106,12 +106,12 @@
 <h3><a id="sec-2_1_1" href="a-demo-app.html#sec-modeling_demo_users" class="heading"><span class="number">2.1.1</span> Modeling demo users</a></h3>
 
 
-<p>There are as many choices for a user data model as there are different registration forms on the web; we&rsquo;ll go with a distinctly minimalist approach. Users of our demo app will have a unique <code>integer</code> identifier called <code>id</code>, a publicly viewable <code>name</code> (of type <code>string</code>), and an <code>email</code> address (also a <code>string</code>) that will double as a username. A summary of the data model for users appears in <a class="ref" href="a-demo-app.html#fig-demo_user_model">Figure&nbsp;2.2</a>.</p>
+<p>Hay tantas opciones para un modelo de datos de usuario, ya que hay diferentes formas de registro en la web; Vamos a ir con un enfoque distintamente minimalista. Users of our demo app will have a unique <code>integer</code> identifier called <code>id</code>, a publicly viewable <code>name</code> (of type <code>string</code>), and an <code>email</code> address (also a <code>string</code>) that will double as a username. A summary of the data model for users appears in <a class="ref" href="a-demo-app.html#fig-demo_user_model">Figure&nbsp;2.2</a>.</p>
 
 <div class="label" id="fig-demo_user_model"></div>
 
 
-<div class="figure"><div class="center"><span class="graphic"><img src="images/figures/demo_user_model.png" alt="demo_user_model" /></span></div><div class="caption"><span class="header">Figure 2.2: </span><span class="description">The data model for users.</span></div></div>
+<div class="figure"><div class="center"><span class="graphic"><img src="images/figures/demo_user_model.png" alt="demo_user_model" /></span></div><div class="caption"><span class="header">Figure 2.2: </span><span class="description">El modelo de datos para los usuarios.</span></div></div>
 
 
 <p>As we&rsquo;ll see starting in <a class="ref" href="modeling-users.html#sec-database_migrations">Section&nbsp;6.1.1</a>, the label <code>users</code> in <a class="ref" href="a-demo-app.html#fig-demo_user_model">Figure&nbsp;2.2</a> corresponds to a <em>table</em> in a database, and the <code>id</code>, <code>name</code>, and <code>email</code> attributes are <em>columns</em> in that table.</p>
