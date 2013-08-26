@@ -2,7 +2,11 @@
 <div id="top"></div>
 
 
+<<<<<<< HEAD
 <h1 class="chapter"><a id="sec-2" href="a-demo-app.html#top" class="heading"><span class="number">Capítulo 2</span> A demo app</a></h1>
+=======
+<h1 class="chapter"><a id="sec-2" href="a-demo-app.html#top" class="heading"><span class="number">Capítulo 2</span> Una demo app</a></h1>
+>>>>>>> 4c4f52ba867f9af633e0902bc9f9c886f491be67
 
 
 <p>En este capítulo, vamos a desarrollar una aplicación de demostración sencilla para mostrar sobre el poder de Rails. El propósito es obtener una visión general de alto nivel de la programación de Ruby on Rails (y del desarrollo web en general) mediante la generación rápida de una aplicación mediante <em>scaffold generators</em>. Como se discutió en <a class="ref" href="beginning.html#sidebar-scaffolding">Box&nbsp;1.2</a>, el resto del libro se toma el camino contrario, el desarrollo de una aplicación completa incremental y explicar cada concepto nuevo que se plantee, pero para una visión rápida (y cierta gratificación instantánea) no hay sustituto para el scaffolding. La aplicación de demostración resultante nos permitirá interactuar con ella a través de su URL, que nos da una idea de la estructura de una aplicación Rails, que incluye un primer ejemplo de la <em>REST architecture</em> utilizado en Rails.</p>
@@ -71,9 +75,9 @@
 </div>
 
 
-<p>(Recuerda el comando si Bundler queja con un error llamado<tt>readline</tt>, trate de añadir esa linea <code>gem &rsquo;rb-readline&rsquo;</code> al tuyo <code>Gemfile</code>.)</p>
+<p>(Recuerda el comando si Bundler queja con un error llamado <tt>readline</tt>, trate de añadir esa linea <code>gem &rsquo;rb-readline&rsquo;</code> al tuyo <code>Gemfile</code>.)</p>
 
-<p>Por último, vamos a poner la aplicación de demostración bajo control de versiones. Recuerda que el comando <code>rails</code> genera un archivo predeterminado llamado <code>.gitignore</code>, pero dependiendo de su sistema, es posible que el archivo más dettallado come en el<a class="ref" href="beginning.html#code-gitignore">Listado&nbsp;1.7</a> sea más conveniente. Entonces inicializamos un repositorio Git y hacer el primer commit:</p>
+<p>Por último, vamos a poner la aplicación de demostración bajo control de versiones. Recuerda que el comando <code>rails</code> genera un archivo predeterminado llamado <code>.gitignore</code>, pero dependiendo de su sistema, es posible que el archivo más dettallado come en el <a class="ref" href="beginning.html#code-gitignore">Listado&nbsp;1.7</a> sea más conveniente. Entonces inicializamos un repositorio Git y hacer el primer commit:</p>
 
 <div class="code"><div class="highlight"><pre><span class="gp">$</span> git init
 <span class="gp">$</span> git add .
@@ -98,50 +102,65 @@
 
 <p>(Al igual que con la primera aplicación, tenga cuidado de <em>no</em> inicializar el repositorio en GitHub con un archivo <code>README</code>.)</p>
 
+<<<<<<< HEAD
 <p>Ahora estamos listos para empezar a hacer la propia aplicación. El típico primer paso cuando al hacer una aplicación web es crear una <em>data model (un modelo de datos)</em>, which is a representation of the structures needed by our application. In our case, the demo app will be a microblog, with only users and short (micro)posts. Thus, we&rsquo;ll begin with a model for <em>users</em> of the app (<a class="ref" href="a-demo-app.html#sec-modeling_demo_users">Section&nbsp;2.1.1</a>), and then we&rsquo;ll add a model for  <em>microposts</em> (<a class="ref" href="a-demo-app.html#sec-modeling_demo_microposts">Section&nbsp;2.1.2</a>).</p>
+=======
+<p><span id="result_box" lang="es" xml:lang="es">que es una representación de las estructuras necesarias por nuestra aplicación. En nuestro caso, la aplicación de demostración será un microblog, con sólo los usuarios y mensajes cortos (microposts). Por lo tanto, vamos a empezar con un modelo de </span><em>users</em> de la app (<a class="ref" href="a-demo-app.html#sec-modeling_demo_users">Sección&nbsp;2.1.1</a>), <span id="result_box2" lang="es" xml:lang="es">y luego vamos a añadir un modelo de</span>  <em>microposts</em> (<a class="ref" href="a-demo-app.html#sec-modeling_demo_microposts">Sección&nbsp;2.1.2</a>).</p>
+>>>>>>> 4c4f52ba867f9af633e0902bc9f9c886f491be67
 
 <div class="label" id="sec-modeling_demo_users"></div>
 
 
-<h3><a id="sec-2_1_1" href="a-demo-app.html#sec-modeling_demo_users" class="heading"><span class="number">2.1.1</span> Modeling demo users</a></h3>
+<h3><a id="sec-2_1_1" href="a-demo-app.html#sec-modeling_demo_users" class="heading"><span class="number">2.1.1</span> Modelando los usuarios de la demo</a></h3>
 
 
+<<<<<<< HEAD
 <p>Hay tantas opciones para un modelo de datos de usuario, ya que hay diferentes formas de registro en la web; Vamos a ir con un enfoque distintamente minimalista. Users of our demo app will have a unique <code>integer</code> identifier called <code>id</code>, a publicly viewable <code>name</code> (of type <code>string</code>), and an <code>email</code> address (also a <code>string</code>) that will double as a username. A summary of the data model for users appears in <a class="ref" href="a-demo-app.html#fig-demo_user_model">Figure&nbsp;2.2</a>.</p>
+=======
+<p><span id="result_box3" lang="es" xml:lang="es">Hay tantas opciones para un modelo de datos (data model en ingles) de usuario, ya que hay diferentes formas de registro en linea, vamos a dar un enfoque netamente minimalista. Los usuarios de nuestra aplicación de demostración tendrán un único</span> <code>integer</code><span id="result_box4" lang="es" xml:lang="es"> identificador llamado </span><code>id</code>, un dato visible <span id="result_box6" lang="es" xml:lang="es">públicamente</span> como el <code>name</code> (tipo de dato <code>string</code>), y un <code>email</code>  (tambíen <code>string</code>) utilizado como username. <span id="result_box5" lang="es" xml:lang="es">Un resumen del modelo de datos para los usuarios aparece en</span> <a class="ref" href="a-demo-app.html#fig-demo_user_model">Figura&nbsp;2.2</a>.</p>
+>>>>>>> 4c4f52ba867f9af633e0902bc9f9c886f491be67
 
 <div class="label" id="fig-demo_user_model"></div>
 
 
+<<<<<<< HEAD
 <div class="figure"><div class="center"><span class="graphic"><img src="images/figures/demo_user_model.png" alt="demo_user_model" /></span></div><div class="caption"><span class="header">Figure 2.2: </span><span class="description">El modelo de datos para los usuarios.</span></div></div>
+=======
+<div class="figure"><div class="center"><span class="graphic"><img src="images/figures/demo_user_model.png" alt="demo_user_model" /></span></div>
+<div class="caption"><span class="header">Figura 2.2: </span>El modelo de datos para los usuarios.</div>
+</div>
+>>>>>>> 4c4f52ba867f9af633e0902bc9f9c886f491be67
 
 
-<p>As we&rsquo;ll see starting in <a class="ref" href="modeling-users.html#sec-database_migrations">Section&nbsp;6.1.1</a>, the label <code>users</code> in <a class="ref" href="a-demo-app.html#fig-demo_user_model">Figure&nbsp;2.2</a> corresponds to a <em>table</em> in a database, and the <code>id</code>, <code>name</code>, and <code>email</code> attributes are <em>columns</em> in that table.</p>
+<p>Como ya vimos en la  <a class="ref" href="modeling-users.html#sec-database_migrations">Sección&nbsp;6.1.1</a>, la etiqueta <code>users</code> (usuarios) in <a class="ref" href="a-demo-app.html#fig-demo_user_model">Figura&nbsp;2.2</a> <span id="result_box7" lang="es" xml:lang="es">corresponde a una</span> <em>table</em> (tabla) en la base de datos, y <code>id</code>, <code>name</code>, y <code>email</code> sono atributos identificados como <em>columns</em> en la tabla.</p>
 
 <div class="label" id="sec-modeling_demo_microposts"></div>
 
 
-<h3><a id="sec-2_1_2" href="a-demo-app.html#sec-modeling_demo_microposts" class="heading"><span class="number">2.1.2</span> Modeling demo microposts</a></h3>
+<h3><a id="sec-2_1_2" href="a-demo-app.html#sec-modeling_demo_microposts" class="heading"><span class="number">2.1.2</span> Modelando los microposts de la demo </a></h3>
 
 
-<p>The core of the micropost data model is even simpler than the one for users: a micropost has only an <code>id</code> and a <code>content</code> field for the micropost&rsquo;s text (of type <code>string</code>).<sup class="footnote" id="fnref-2_1"><a href="#fn-2_1">1</a></sup> There&rsquo;s an additional complication, though: we want to <em>associate</em> each micropost with a particular user; we&rsquo;ll accomplish this by recording the <code>user_id</code> of the owner of the post. The results are shown in <a class="ref" href="a-demo-app.html#fig-demo_micropost_model">Figure&nbsp;2.3</a>.</p>
+<p><span id="result_box8" lang="es" xml:lang="es">El núcleo del modelo de datos de el micropost es aún más sencillo del modelo de los usuarios: un micropost sólo tiene un</span> <code>id</code> y un campo <code>content</code> para el texto del micropos (tipo de dato: <code>string</code>).<sup class="footnote" id="fnref-2_1"><a href="#fn-2_1">1</a></sup><span id="result_box9" lang="es" xml:lang="es"> Hay una complicación adicional, sin embargo: queremos</span> <em>asociar</em> a cada micropost un particular usuario; <span id="result_box10" lang="es" xml:lang="es">vamos a lograr esto mediante un campo llamado </span> <code>user_id</code> nos da el propietario del micropos. <span id="result_box11" lang="es" xml:lang="es">Los resultados se muestran en la</span> <a class="ref" href="a-demo-app.html#fig-demo_micropost_model">Figura&nbsp;2.3</a>.</p>
 
 <div class="label" id="fig-demo_micropost_model"></div>
 
 
-<div class="figure"><div class="center"><span class="graphic"><img src="images/figures/demo_micropost_model.png" alt="demo_micropost_model" /></span></div><div class="caption"><span class="header">Figure 2.3: </span><span class="description">The data model for microposts.</span></div></div>
+<div class="figure"><div class="center"><span class="graphic"><img src="images/figures/demo_micropost_model.png" alt="demo_micropost_model" /></span></div>
+<div class="caption"><span class="header">Figura 2.3: </span><span class="description">El modelo de datos de los  microposts.</span></div>
+</div>
 
 
-<p>We&rsquo;ll see in <a class="ref" href="a-demo-app.html#sec-demo_user_has_many_microposts">Section&nbsp;2.3.3</a> (and more fully in <a class="ref" href="user-microposts.html#top">Chapter&nbsp;10</a>) how this <code>user_id</code> attribute allows us to succinctly express the notion that a user potentially has many associated microposts.</p>
+<p><span id="result_box12" lang="es" xml:lang="es">Veremos en</span> <a class="ref" href="a-demo-app.html#sec-demo_user_has_many_microposts">Sección&nbsp;2.3.3</a> (y por completo en el <a class="ref" href="user-microposts.html#top">Capítulo&nbsp;10</a>) como el campo de lo atributo <code>user_id</code><span id="result_box13" lang="es" xml:lang="es">nos permite expresar sucintamente el concepto de que un usuario potencialmente tiene muchas microposts asociados</span>.</p>
 
 <div class="label" id="sec-demo_users_resource"></div>
 
 
-<h2><a id="sec-2_2" href="a-demo-app.html#sec-demo_users_resource" class="heading"><span class="number">2.2</span> The Users resource</a></h2>
+<h2><a id="sec-2_2" href="a-demo-app.html#sec-demo_users_resource" class="heading"><span class="number">2.2</span> El recurso de los Usuarios</a></h2>
 
 
-<p>In this section, we&rsquo;ll implement the users data model in <a class="ref" href="a-demo-app.html#sec-modeling_demo_users">Section&nbsp;2.1.1</a>, along with a web interface to that model.
-The combination will constitute a <em>Users resource</em>, which will allow us to think of users as objects that can be created, read, updated, and deleted through the web via the <a href="http://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol">HTTP protocol</a>. As promised in the introduction, our Users resource will be created by a scaffold generator program, which comes standard with each Rails project. I urge you not to look too closely at the generated code; at this stage, it will only serve to confuse you.</p>
+<p><span id="result_box14" lang="es" xml:lang="es">En esta sección, vamos a implementar el modelo de datos de los usuarios en</span> la <a class="ref" href="a-demo-app.html#sec-modeling_demo_users">Sección&nbsp;2.1.1</a>, <span id="result_box15" lang="es" xml:lang="es">junto con una interfaz web para ese modelo. La combinación constituirá en una</span> <em>Users resource (recurso de Usuarios)</em>, <span id="result_box16" lang="es" xml:lang="es">que nos permita pensar en los usuarios como objetos que se pueden crear, leer, actualizar y eliminar mediante el web a través de la</span> <a href="http://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol">HTTP protocol</a>. <span id="result_box17" lang="es" xml:lang="es">Como prometí en la introducción, nuestro recurso de Usuarios será creado por un programa generador llamado scaffolding, que viene de serie con cada proyecto Rails. Os exhorto a no mirar demasiado de cerca el código generado, en esta etapa, porqué va a confundir.</span></p>
 
-<p>Rails scaffolding is generated by passing the <code>scaffold</code> command to the <code>rails generate</code> script. The argument of the <code>scaffold</code> command is the singular version of the resource name (in this case, <code>User</code>), together with optional parameters for the data model&rsquo;s attributes:<sup class="footnote" id="fnref-2_2"><a href="#fn-2_2">2</a></sup></p>
+<p>El scaffolding de Rails <span id="result_box18" lang="es" xml:lang="es">se genera utilizando el comando</span> <code>scaffold</code> junto con el script <code>rails generate</code>. El argumento del comanddo <code>scaffold</code><span id="result_box19" lang="es" xml:lang="es">es la versión singular del nombre de recurso (en este caso, </span><code>User</code>), <span id="result_box20" lang="es" xml:lang="es">junto con los parámetros opcionales para los atributos del modelo de datos</span>:<sup class="footnote" id="fnref-2_2"><a href="#fn-2_2">2</a></sup></p>
 
 <div class="code"><div class="highlight"><pre>$ rails generate scaffold User name:string email:string
       invoke  active_record
@@ -182,9 +201,9 @@ The combination will constitute a <em>Users resource</em>, which will allow us t
 </div>
 
 
-<p>By including <code>name:string</code> and <code>email:string</code>, we have arranged for the User model to have the form shown in <a class="ref" href="a-demo-app.html#fig-demo_user_model">Figure&nbsp;2.2</a>. (Note that there is no need to include a parameter for&nbsp;<code>id</code>; it is created automatically by Rails for use as the <em>primary key</em> in the database.)</p>
+<p>Al incluir <code>name:string</code> y <code>email:string</code>, <span id="result_box21" lang="es" xml:lang="es">organizamos  el modelo de usuario para que el formulario se muestra como en</span> <a class="ref" href="a-demo-app.html#fig-demo_user_model">Figura&nbsp;2.2</a>. (<span id="result_box22" lang="es" xml:lang="es">Tenga en cuenta que no hay necesidad de incluir un parámetro para</span> <code>id</code>; <span id="result_box23" lang="es" xml:lang="es">se crea automáticamente gracias a Rails para su uso como</span> <em>primary key</em> (llave primaria) en la base de datos.)</p>
 
-<p>To proceed with the demo application, we first need to <em>migrate</em> the database using <em>Rake</em> (<a class="ref" href="a-demo-app.html#sidebar-rake">Box&nbsp;2.1</a>):</p>
+<p><span id="result_box24" lang="es" xml:lang="es">Para continuar con la aplicación de demostración, primero tenemos que</span> lanzar el comando <em>migrate</em> para crear las tablas en la base de datos utilizando <em>Rake</em> (<a class="ref" href="a-demo-app.html#sidebar-rake">Box&nbsp;2.1</a>):</p>
 
 <div class="code"><div class="highlight"><pre><span class="gp">$</span> bundle <span class="nb">exec </span>rake db:migrate
 <span class="go">==  CreateUsers: migrating ====================================================</span>
